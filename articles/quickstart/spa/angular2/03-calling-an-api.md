@@ -14,7 +14,7 @@ sample_download_required_data:
 
 <%= include('../_includes/_calling_api_create_scope') %>
 
-## Set the Audience and Scope in `auth0.WebAuth`
+## Configure your Application
 
 In your `auth0.WebAuth` instance, enter your API identifier as the value for `audience`.
 Add your scopes to the `scope` key.
@@ -31,7 +31,7 @@ auth0 = new auth0.WebAuth({
 
 <%= include('../_includes/_calling_api_use_rules') %>
 
-## Add `HttpClientModule`
+### Add `HttpClientModule`
 
 <%= include('../_includes/_calling_api_access_token') %>
 
@@ -55,7 +55,7 @@ import { HttpClientModule } from '@angular/common/http';
 })
 ```
 
-## Make Authenticated Calls with `HttpHeaders`
+## Call the API
 
 You can now use `HttpClient` and `HttpHeaders` to make secure calls to your API from anywhere in the application.
 
